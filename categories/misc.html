@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Miscellaneous – My Digital Library</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Digital Library</h1>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/categories/engineering.html">Engineering</a>
+        <a href="/categories/psychology.html">Psychology</a>
+        <a href="/categories/misc.html">Misc</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Miscellaneous Posts</h2>
+    <div id="engineering-posts"></div>
+</div>
+
+<script src="../script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadPosts("misc", "misc-posts");
+    });
+</script>
+
+</body>
+</html>
